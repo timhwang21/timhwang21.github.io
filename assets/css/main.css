@@ -3363,16 +3363,17 @@
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.5em;
+			bottom: -6.51em;
 			left: 0;
 		}
 
-		.wrapper:last-child:after {
+		#four:after {
+			/*border: 2px solid red;*/
 			-moz-transform: scaleY(-1);
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.4em;
+			bottom: -6.495em;
 			left: 0;
 		}
 
