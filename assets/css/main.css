@@ -49,15 +49,34 @@
 	}
 
 	.logo-box {
+		padding-top: 1em;
 		width: 40%;
 		display: flex;
 		justify-content: space-around;
+	}
+
+	.footer-link {
+		border-bottom: none;
 	}
 
 	.link-box {
 		width: 35%;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.resume-box {
+		/*width: 40%;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.resume-box h2 {
+		font-size: 40px;
+		margin-top: 1em;
+		margin-bottom: .25em;
 	}
 
 /* Box Model */
@@ -1636,7 +1655,7 @@
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(36, 39, 60, 0.4), rgba(36, 39, 60, .9)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 70, 0.4), rgba(36, 39, 60, .9)), url("../../images/bg.jpg");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -2743,7 +2762,6 @@
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -2752,6 +2770,10 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+	}
+
+	#header:not(.alt):hover {
+		background-color: rgba(53, 56, 73, 0.95);
 	}
 
 		#header h1 {
@@ -3046,7 +3068,7 @@
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 12em 0 8em 0 ;
 	}
 
 		#banner .inner {
@@ -3054,7 +3076,7 @@
 			width: 55em;
 		}
 
-		#banner .logo {
+		#banner .logo, #footer .logo {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3067,6 +3089,7 @@
 			margin: 0 0 1.3em 0;
 		}
 
+
 			#banner .logo .icon {
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
@@ -3077,6 +3100,31 @@
 				line-height: 2.25em;
 				text-align: center;
 				width: 2.25em;
+				-moz-transition: background .2s ease;
+				-webkit-transition: background .2s ease;
+				-ms-transition: background .2s ease;
+				transition: background .2s ease;
+			}
+
+			#footer .logo .icon {
+				background: rgba(100, 100, 100, 0.125);
+				border-radius: 100%;
+				border: solid 3px rgba(255, 255, 255, 0.125);
+				cursor: pointer;
+				display: inline-block;
+				font-size: 3em;
+				height: 2.25em;
+				line-height: 2.25em;
+				text-align: center;
+				width: 2.25em;
+				-moz-transition: background .2s ease;
+				-webkit-transition: background .2s ease;
+				-ms-transition: background .2s ease;
+				transition: background .2s ease;
+			}
+
+			#footer .logo .icon:hover {
+				background: rgba(200, 200, 200, .25);
 			}
 
 		#banner h2 {
@@ -3162,11 +3210,11 @@
 				margin-bottom: -2.5em;
 			}
 
-				#banner .logo {
+				#banner .logo, #footer .logo {
 					margin: 0 0 1em 0;
 				}
 
-					#banner .logo .icon {
+					#banner .logo .icon, #footer .logo .icon {
 						font-size: 1.5em;
 					}
 
