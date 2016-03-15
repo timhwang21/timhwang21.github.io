@@ -61,8 +61,17 @@
 
 	.link-box {
 		width: 35%;
+		margin-left: 65%;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.alt .link-box {
+		margin-left: 0;
+	}
+
+	.link-box.one-item {
+		justify-content: flex-end;
 	}
 
 	.resume-box {
@@ -1778,7 +1787,7 @@
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: rgba(200, 200, 200, 0.25);
 			}
 
 			a.special:not(.button):active:before {
@@ -2192,6 +2201,10 @@
 		.icon > .label {
 			display: none;
 		}
+
+	.devicon:before {
+			font-family: devicon;
+	}
 
 /* Image */
 
